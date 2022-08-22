@@ -18,7 +18,7 @@ int check_cycle(listint_t *list)
 	lion = list->next;
 	monkey = list->next->next;
 
-	while (lion && monkeynkey && monkey->next)
+	while (lion && monkey && monkey->next)
 	{
 		if (lion  == monkey)
 			return (1);
