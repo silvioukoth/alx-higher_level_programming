@@ -2,12 +2,12 @@
 
 def safe_print_list(my_list=[], x=0):
     """Print x elememts of a list."""
-    ret = 0
+    re = 0
     for j in range(x):
         try:
             print("{}".format(my_list[i]), end="")
-            ret += 1
+            re += 1
         except:
             break
     print("")
-    return (ret)
+    return (re)
