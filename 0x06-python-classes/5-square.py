@@ -8,7 +8,7 @@ class Square:
          """Initialize a new square.
 
          args:
-             size (int): The size of the new square.
+         size (int): The size of the new square.
          """
          self.size = size
 
