@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""solves the N queens problem."""
+"""solves the N queens puzzle.
 
-Determines all possible solutions to placing N
+Determines all the possible solutions to placing N
 N non-attacking queens on an NxN chessboard.
 
 N must be an integer greater than or equal to 4.
@@ -72,7 +72,7 @@ def xout(board, row, col):
         if c >= len(board):
             break
         board[r][c] = "x"
-            c += 1
+        c += 1
     # X out all spots diagonally up to the left
     c = col - 1
     for r in range(row - 1, -1, -1):
