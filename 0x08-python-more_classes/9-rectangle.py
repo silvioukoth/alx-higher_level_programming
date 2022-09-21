@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""Define a Rectangle class."""
+"""Defines a Rectangle class."""
 
 class Rectangle:
-    """Represent a Rectangle.
+    """Represents a class of Rectangle.
 
     Attributes:
         number_of_instances (int): The number of Rectangle instances.
         print_symbol (any): The symbol used for string representation.
     """
-    
+
     number_of_instances = 0
     print_symbol = "#"
 
@@ -27,12 +27,12 @@ class Rectangle:
 
     @property
     def width(self):
-        """set the width of the Rectangle."""
+        """sets the width of the Rectangle."""
         return self.__width
 
     @width.setter
     def width(self, value):
-        if isinstance(value, int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
@@ -40,7 +40,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """set the height of the Rectangle."""
+        """sets the height of the Rectangle."""
         return self.__height
 
     @height.setter
