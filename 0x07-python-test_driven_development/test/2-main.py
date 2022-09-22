@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-Rectangle = __import__('2-rectangle').Rectangle
+matrix_divided = __import__('2-matrix_divided').matrix_divided
 
-my_rectangle = Rectangle(2, 4)
-print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
-
-print("--")
-
-my_rectangle.width = 
-my_rectangle.height = 3
-print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
+matrix = [
+        [1, 2, 3],
+        [4, 5, 6]
+]
+print(matrix_divided(matrix, 3))
+print(matrix)

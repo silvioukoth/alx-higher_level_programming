@@ -1,26 +1,16 @@
 #!/usr/bin/python3
-Rectangle = __import__('4-rectangle').Rectangle
+print_square = __import__('4-print_square').print_square
 
-my_rectangle = Rectangle(2, 4)
-print(str(my_rectangle))
-print("--")
-print(my_rectangle)
-print("--")
-print(repr(my_rectangle))
-print("--")
-print(hex(id(my_rectangle)))
-print("--")
-
-# create new instance based on representation
-new_rectangle = eval(repr(my_rectangle))
-print(str(new_rectangle))
-print("--")
-print(new_rectangle)
-print("--")
-print(repr(new_rectangle))
-print("--")
-print(hex(id(new_rectangle)))
-print("--")
-
-print(new_rectangle is my_rectangle)
-print(type(new_rectangle) is type(my_rectangle))
+print_square(4)
+print("")
+print_square(10)
+print("")
+print_square(0)
+print("")
+print_square(1)
+print("")
+try:
+    print_square(-1)
+except Exception as e:
+    print(e)
+print("")

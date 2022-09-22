@@ -1,17 +1,11 @@
 #!/usr/bin/python3
-Rectangle = __import__('3-rectangle').Rectangle
+say_my_name = __import__('3-say_my_name').say_my_name
 
-my_rectangle = Rectangle(2, 4)
-print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
+say_my_name("John", "Smith")
+say_my_name("Walter", "White")
+say_my_name("Bob")
 
-
-print(str(my_rectangle))
-print(repr(my_rectangle))
-
-print("--")
-
-
-my_rectangle.width = 10
-my_rectangle.height = 3
-print(my_rectangle)
-print(repr(my_rectangle))
+try:
+    say_my_name(12, "White")
+except Exception as e:
+    print(e)
