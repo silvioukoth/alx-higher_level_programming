@@ -18,8 +18,8 @@ def text_indentation(text):
         c += 1
 
     while c < len(text):
-        print(text[c], end="")
-        if text[c] == "\n" or text[c] in ".?:":
+         print(text[c], end="")
+         if text[c] == "\n" or text[c] in ".?:":
              if text[c] in ".?:":
                  print("\n")
              c += 1
