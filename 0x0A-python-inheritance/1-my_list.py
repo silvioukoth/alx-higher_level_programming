@@ -2,8 +2,8 @@
 """Defines the inherited class Mylist."""
 
 class MyList(list):
-    """inherits sorted list."""
+    """inherits sorted built-in list class."""
 
-def print_sorted(self):
-    """prints the list, but sorted (ascending sort)."""
-    print(sorted(self))
+    def print_sorted(self):
+        """Print a list in sorted ascending order."""
+        print(sorted(self))
